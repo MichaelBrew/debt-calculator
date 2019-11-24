@@ -1,0 +1,31 @@
+{
+  "name": "debt-calculator",
+  "version": "1.0.0",
+  "description": "Utility package that calculates debt related information (interest, payoff date, etc)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist/",
+    "test": "jest"
+  },
+  "author": "Michael Brew",
+  "license": "ISC",
+  "prepublish": "npm run build",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.138",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
+    "eslint": "^6.4.0",
+    "jest": "^24.9.0",
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.1.2",
+    "typescript": "^3.6.3"
+  }
+}
